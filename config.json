@@ -1,0 +1,19 @@
+{
+	"environment": {
+		"CUDA_DEVICE_ORDER":"PCI_BUS_ID",
+		"CUDA_VISIBLE_DEVICES":"0",
+		"TF_CPP_MIN_LOG_LEVEL":"3",
+		"HDF5_USE_FILE_LOCKING":"FALSE"
+		},
+	"imageparams": {
+		"eta_bins":50,
+		"eta_min":-2.5,
+		"eta_max":2.5,
+		"phi_bins":64,
+		"phi_min":-3.14159265359,
+		"phi_max":3.14159265359
+	},
+	"trainingconfig": {
+		"batch_size":16
+	}
+}
