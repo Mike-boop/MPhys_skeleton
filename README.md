@@ -44,3 +44,9 @@ The CNN aspect of this repo is a bit messy - sorry! I'll try and walk you throug
 4. Start the ConvolutionalModels notebook. In the "Load data" section, update the data directory. In the "Load model" section, update the filepath of the weights file that was created in step 3. You should also make sure that the architecture specified in this section matches that of the trained model.
 
 That should be all you need. The SimpleModels notebook is a lot more straightforward to get going with.
+
+# Things to note
+
+The 'simple models' were trained with 20000 events in my project, although more is probably better. The grid search was quite coarse so it might be worth redoing this. I'm getting AUC scores near 0.9 with my limited dataset, so hopefully if you try with 20000+ events you should reproduce my reported scores of 0.95+...
+
+I had poor enough judgement to update to the latest version of tensorflow, which only supports 'channels last' (NHWC) format. This is why there is a lot of strange indexing/reshaping/exapnd_dims/np.newxis floating around.
