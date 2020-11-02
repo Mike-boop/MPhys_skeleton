@@ -46,7 +46,7 @@ def unet(tracks=False):
     n_channels = 4 if not tracks else 6
     layer_opts = {'kernel_initializer': 'RandomUniform',
                 'padding': 'valid',
-                'data_format': 'channels_first',
+                'data_format': 'channels_last',
                 'strides': (1,1)}
 
     ip = layers.Input((eta_bins, phi_bins, n_channels))
