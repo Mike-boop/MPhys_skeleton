@@ -16,7 +16,7 @@ I reweighted some .h5 files to have a fairly uniform MET histograme between 0 to
 
 # Contents
 
-There are two main notebooks in this repo. I'm afraid I've had some data loss issues, but all of the essential components of the project should be outlined in the notebooks. If there's anything missing, feel free to get in touch.
+There are two main notebooks in this repo.
 
 1. SimpleModels.ipynb - this notebook demonstrates most of the non-convolutional techniques that I used. This includes some data pre-processing, model training/evaluation, and basic feature analysis. I've included an example of using GridSearchCV at the bottom so that you can understand how hyperparameters were selected.
 
