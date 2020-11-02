@@ -51,4 +51,4 @@ The 'simple models' were trained with 20000 events in my project, although more 
 
 You should also try this with the full eta range (-5 to 5), my local dataset only contains info from -2.5 to 2.5. I used the full eta range in my report.
 
-I had poor enough judgement to update to the latest version of tensorflow, which only supports 'channels last' (NHWC) format. This is why there is a lot of strange indexing/reshaping/exapnd_dims/np.newxis floating around.
+I had poor enough judgement to update to the latest version of tensorflow, which only supports 'channels last' (NHWC) format. This is why there is a lot of strange indexing/reshaping/expand_dims/np.newxis floating around.
